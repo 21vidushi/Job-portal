@@ -12,6 +12,9 @@ const Home = () => {
   if (!isAuthorized) {
     return <Navigate to={"/login"} />;
   }
+  else{
+     return <Navigate to={"/"} />;
+  }
   return (
     <>
       <section className="homePage page">
